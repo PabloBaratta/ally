@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import './LoginSignup.css'
 
+
 const LoginSignup = () => {
+
 
     const [action, setAction] = useState("Iniciar sesion");
     return (
@@ -38,7 +40,6 @@ const LoginSignup = () => {
                     setAction("Iniciar sesion")
                 }}>Iniciar sesion
                 </div>
-                <a href='./Home.jsx'></a>
             </div>
 
         </div>

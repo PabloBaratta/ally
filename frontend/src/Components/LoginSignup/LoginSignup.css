@@ -1,18 +1,20 @@
 .titulo{
     text-align: center;
-    font-size: 60px;
+    font-size: 70px;
+    color: #402A22;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     margin: auto;
-    margin-top: 60px;
-    margin-bottom: 100px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 50px;
     padding-bottom: 30px;
-    width: 600px;
     background: linear-gradient(rgba(242, 213, 196, 1), rgba(217, 161, 113, 1) );
-    border-radius: 50px;
+    border-radius: 100px;
+    border-top-left-radius: 0;
 }
 
 .header {
@@ -26,12 +28,12 @@
 
 .text {
     color: #402A22;
-    font-size: 48px;
-    font-weight: 300;
+    font-size: 36px;
+    font-weight: 500;
 }
 
 .inputs {
-    margin-top: 55px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -39,13 +41,13 @@
 
 .input {
     display: flex;
-    width: 480px;
+    width: 90%;
     height: 50px;
     border-radius: 30px;
     border: 2px solid #402A22;
     background: #ffffff;
     margin: auto;
-    margin-top: -30px;
+    margin-top: -20px;
 }
 
 .input input {
@@ -62,11 +64,11 @@
 }
 
 .Email-Contraseña {
-    color: black;
+    color: rgba(64, 42, 34, 1);
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 600;
     text-align: left;
-    margin-left: 60px;
+    margin-left: 30px;
 }
 
 .forgot-password{
@@ -75,23 +77,26 @@
     font-size: 18px;
     cursor: pointer;
     text-align: left;
-    margin-left: 60px;
+    margin-left: 30px;
 }
 
 .submit-container{
     display: flex;
     gap: 30px;
-    margin: 60px auto;
+    margin: 40px auto;
+    width: 70%;
+    flex-direction: column;
+    align-items: center;
 }
 
 .submit{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 220px;
+    width: 90%;
     height: 60px;
     color: #ffffff;
-    background-color: #797979;
+    background-color: rgba(166, 64, 27, 0.68);
     border-radius: 50px;
     font-size: 19px;
     font-weight: 300;
@@ -105,8 +110,8 @@
 .nombre-de-usuario{
     color: #402A22;
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 600;
     text-align: left;
-    margin-left: 60px;
+    margin-left: 30px;
     margin-bottom: 45px;
 }
