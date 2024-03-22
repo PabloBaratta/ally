@@ -1,0 +1,13 @@
+body{
+  margin: 0;
+  font-family: Nunito;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  background: rgba(217, 161, 113, 1);
+}
+
+code{
+  font-family: Nunito;
+}
+
+
