@@ -20,12 +20,12 @@ const SignUp = () => {
                     </div>
                 </div>
 
-                <p className='Email-Contrase�a'>Email</p>
+                <p className='Email-Contraseña'>Email</p>
                 <div className='input'>
                     <input type='email'/>
                 </div>
 
-                <p className='Email-Contrase�a'>Contrasena</p>
+                <p className='Email-Contraseña'>Contraseña</p>
                 <div className='input'>
                     <input type='password'/>
                 </div>
@@ -35,7 +35,7 @@ const SignUp = () => {
                     <button className="submit">Crear cuenta</button>
                 </Link>
                 <Link to={"/"} style={{ textDecoration: "none" }}>
-                    <button className="gray">Iniciar sesion</button>
+                    <button className="gray">Iniciar sesión</button>
                 </Link>
             </div>
         </div>
