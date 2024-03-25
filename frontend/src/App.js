@@ -1,15 +1,18 @@
 import './App.css';
-import LoginSignup from "./Components/LoginSignup/LoginSignup";
+import Login from "./Components/LoginSignup/Login";
+import SignUp from "./Components/LoginSignup/SignUp";
+import Home from "./Components/Home/Home";
+import {useNavigate, Routes, Route} from "react-router-dom";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        {/*<img src={logo} className="App-logo" alt="logo" />*/}
-        <LoginSignup />
-      </header>
-    </div>
-  );
+    const navigate = useNavigate()
+    return (
+        <Routes>
+            <Route path="/" element={<Login/>}/>
+            <Route path="/signup" element={<SignUp/>}/>
+            <Route path="/home" element={<Home/>}/>
+        </Routes>
+    );
 }
 
 export default App;

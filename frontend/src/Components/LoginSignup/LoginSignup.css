@@ -82,10 +82,9 @@
 
 .submit-container{
     display: flex;
-    gap: 30px;
+    gap: 50px;
     margin: 40px auto;
-    width: 70%;
-    flex-direction: column;
+    width: 90%;
     align-items: center;
 }
 
@@ -93,18 +92,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 120%;
     height: 60px;
     color: #ffffff;
     background-color: rgba(166, 64, 27, 0.68);
     border-radius: 50px;
     font-size: 19px;
     font-weight: 300;
-    cursor: pointer;
+    border: none;
 }
 .gray{
     background-color: #eaeaea ;
     color: #676767;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120%;
+    height: 60px;
+    border-radius: 50px;
+    font-size: 19px;
+    font-weight: 300;
+    cursor: pointer;
+    border: none;
 }
 
 .nombre-de-usuario{
@@ -113,5 +122,5 @@
     font-weight: 600;
     text-align: left;
     margin-left: 30px;
-    margin-bottom: 45px;
+    margin-bottom: -3px;
 }
