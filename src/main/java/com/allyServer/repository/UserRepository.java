@@ -3,19 +3,23 @@ package com.allyServer.repository;
 import com.allyServer.model.User;
 
 import javax.persistence.EntityManager;
+import javax.persistence.EntityTransaction;
+
+
 import java.util.List;
 import java.util.Optional;
 
-public class Users {
+
+public class UserRepository {
 
     private final EntityManager entityManager;
 
-    public Users(EntityManager entityManager){
+    public UserRepository(EntityManager entityManager){
         this.entityManager = entityManager;
     }
 
-    public Optional<User> findById(Long id){
-        return Optional.ofNullable(entityManager.find(User.class, id));
+    public Optional<User> findById(Long userId){
+        return Optional.ofNullable(entityManager.find(User.class, userId));
     }
 
     public Optional<User> findByEmail(String email){
@@ -31,7 +35,10 @@ public class Users {
     }
 
     public User persist(User user){
+        EntityTransaction transaction = entityManager.getTransaction();
+        transaction.begin();
         entityManager.persist(user);
+        transaction.commit();
         return user;
     }
 

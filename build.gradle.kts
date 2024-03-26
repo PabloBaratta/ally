@@ -1,3 +1,5 @@
+import java.util.regex.Pattern.compile
+
 plugins {
     id("java")
     id("war")
@@ -22,7 +24,7 @@ dependencies {
     providedRuntime("org.springframework.boot:spring-boot-starter-tomcat")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     implementation("com.google.code.gson:gson:2.9.0")
-
+    compile("org.springframework.boot:spring-boot-devtools")
 }
 
 tasks.test {
