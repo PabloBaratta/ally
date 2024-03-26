@@ -1,8 +1,7 @@
-package org.allycode.model;
+package com.allyServer.model;
 
 import javax.persistence.*;
-import java.sql.Time;
-import java.time.LocalDateTime;
+
 import com.google.gson.Gson;
 
 @Entity

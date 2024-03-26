@@ -1,6 +1,6 @@
-package org.allycode.repository;
+package com.allyServer.repository;
 
-import org.allycode.model.User;
+import com.allyServer.model.User;
 
 import javax.persistence.EntityManager;
 import java.util.List;

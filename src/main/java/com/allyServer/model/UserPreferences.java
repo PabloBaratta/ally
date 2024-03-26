@@ -1,4 +1,4 @@
-package org.allycode.model;
+package com.allyServer.model;
 
 import javax.persistence.*;
 @Entity
