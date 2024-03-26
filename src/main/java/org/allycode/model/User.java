@@ -3,10 +3,12 @@ package org.allycode.model;
 import javax.persistence.*;
 import java.sql.Time;
 import java.time.LocalDateTime;
+import com.google.gson.Gson;
 
 @Entity
 @Table(name = "users")
 public class User {
+
     @Id
     @GeneratedValue(generator = "UserGen", strategy= GenerationType.SEQUENCE)
     private Long userId;
@@ -39,6 +41,38 @@ public class User {
         this.preferences = new UserPreferences(this);
     }
 
+    public Long getUserId() {
+        return userId;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public void setPreferences(UserPreferences preferences) {
+        this.preferences = preferences;
+    }
+
     public User() {
 
     }
@@ -52,4 +86,17 @@ public class User {
     public UserPreferences getPreferences(){
         return this.preferences;
     }
+
+
+    public static User fromJson(String json) {
+        final Gson gson = new Gson();
+        return gson.fromJson(json, User.class);
+    }
+
+    public String asJson() {
+        Gson gson = new Gson();
+        return gson.toJson(this);
+    }
+
 }
+
