@@ -7,7 +7,7 @@ const Home = () => {
         <div>
             <h1 className='titulo'>Home</h1>
             <div className='submit-container'>
-                <Link to={"/"}>
+                <Link to={"/"} style={{textDecoration: "none"}}>
                     <button className='submit'>Log out</button>
                 </Link>
 
