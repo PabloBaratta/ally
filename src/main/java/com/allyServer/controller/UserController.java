@@ -33,6 +33,7 @@ public class UserController {
         return "a";
     }
 
+    @CrossOrigin(origins = "http://localhost:3000")
     @PostMapping("/user/create")
     public ResponseEntity<String> createUser(@RequestBody User user){
         try {
